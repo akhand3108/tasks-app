@@ -2,7 +2,9 @@ const mongoose = require("mongoose")
 
 mongoose
   .connect(
-    "mongodb+srv://admin:9g2ulBKW7urFdlyj@tasks-app.amqff.mongodb.net/weather-app?retryWrites=true&w=majority",
+    "mongodb+srv://admin:" +
+      process.env.DB_PASSWORD +
+      "@tasks-app.amqff.mongodb.net/weather-app?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useCreateIndex: true,
