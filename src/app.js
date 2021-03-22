@@ -11,5 +11,5 @@ app.use(express.json())
 app.use("/users", usersRouter)
 app.use("/tasks", tasksRouter)
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 80
 app.listen(PORT, () => console.log("SERVER is UP on", PORT))
